@@ -1,10 +1,10 @@
 compatibility_date = "2022-02-06"
-name = "worker-bompietro"
+name = "worker-risebookclub"
 type = "javascript"
 account_id = "03e75c0f67258404b45d7421ebb5e219"
 workers_dev = true
-route = "bompietro.com/*"
-zone_id = "c4c5c0be8fe852acf3fb5f2073a8692d"
+route = "risebookclub.com/*"
+zone_id = "c7962ed6e184c7e50558ffec2a8a5bd5"
 
 [site]
 bucket = ".output/public"
