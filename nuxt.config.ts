@@ -4,7 +4,7 @@ import { defineNuxtConfig } from "nuxt3";
 export default defineNuxtConfig({
   // build
   build: {
-    transpile: ["@headlessui/vue"],
+    transpile: ["@headlessui/vue", "@heroicons/vue"],
     postcss: {
       postcssOptions: {
         plugins: {
@@ -12,6 +12,18 @@ export default defineNuxtConfig({
           autoprefixer: {},
         },
       },
+    },
+  },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+  vite: {
+    logLevel: "info",
+    optimizeDeps: {
+      include: ["@headlessui/vue", "@heroicons/vue/solid", "@heroicons/vue/outline", "vue"],
     },
   },
   css: ["~/assets/css/tailwind.css"],

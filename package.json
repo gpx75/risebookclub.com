@@ -6,11 +6,22 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt3": "latest",
-    "tailwindcss": "^3.0.18"
+    "autoprefixer": "10.4.4",
+    "nuxt3": "^3.0.0-27495913.81bf1c0",
+    "postcss": "8.4.12",
+    "sass": "1.50.0",
+    "sass-loader": "12.6.0",
+    "tailwindcss": "3.0.23"
   },
   "dependencies": {
+    "@headlessui/vue": "1.5.0",
+    "@heroicons/vue": "1.0.6",
+    "@pinia/nuxt": "0.1.8",
+    "@tailwindcss/aspect-ratio": "0.4.0",
+    "@tailwindcss/forms": "0.5.0",
+    "@tailwindcss/line-clamp": "0.3.1",
+    "@tailwindcss/typography": "0.5.2",
     "animate.css": "^4.1.1",
-    "daisyui": "^1.25.4"
+    "daisyui": "^2.13.6"
   }
 }

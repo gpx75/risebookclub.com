@@ -1,4 +1,17 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
+  content: {
+    files: ["./components/**/*.{vue,js}", "./layouts/**/*.vue", "./pages/**/*.vue", "./app.vue", "./plugins/**/*.{js,ts}"],
+  },
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Quicksand", ...defaultTheme.fontFamily.sans],
+        heading: ["Jeko-Medium"],
+        cursive: ["Shadows Into Light", "cursive"],
+      },
+    },
+  },
   daisyui: {
     themes: [
       {
@@ -24,16 +37,7 @@ module.exports = {
       },
     ],
   },
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Quicksand", "sans-serif"],
-        heading: ["Jeko-Medium"],
-        cursive: ["Shadows Into Light", "cursive"],
-      },
-    },
-  },
   darkMode: "class",
   content: ["./components/**/*.{vue,js}", "./composables/**/*.{js,ts}", "./layouts/**/*.vue", "./pages/**/*.vue", "./plugins/**/*.{js,ts}", "./utils/**/*.{js,ts}", "./app.vue"],
-  plugins: [require("daisyui")],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography"), require("@tailwindcss/line-clamp"), require("@tailwindcss/aspect-ratio"), require("daisyui")],
 };
