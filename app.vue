@@ -10,6 +10,27 @@
             <p class="font-cursive text-5xl text-white">If a dog chews books whose books does he choose?</p>
           </div>
         </div>
+        <hr />
+        <div class="mt-4 card m-auto w-96 bg-white">
+          <div class="card-body">
+            <p class="font-cursive text-5xl text-black">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+        <div class="mt-4 card m-auto w-96 bg-white">
+          <div class="card-body">
+            <p class="font-cursive text-4xl text-black">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+        <div class="mt-4 card m-auto w-96 bg-primary text-primary-content">
+          <div class="card-body">
+            <p class="font-cursive text-5xl text-white">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+        <div class="mt-4 card m-auto w-96 bg-primary text-primary-content">
+          <div class="card-body">
+            <p class="font-cursive text-4xl text-white">If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
