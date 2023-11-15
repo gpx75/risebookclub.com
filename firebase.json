@@ -1,0 +1,10 @@
+{
+    "hosting": [
+        {
+            "site": "rise-1577795242910",
+            "public": ".output/public",
+            "cleanUrls": true,
+            "rewrites": [{ "source": "**", "function": "server" }]
+        }
+    ]
+}
