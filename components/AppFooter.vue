@@ -35,11 +35,9 @@ export default {
     <footer class="bg-gradient-to-b from-transparent to-gray-100 py-12 dark:to-gray-900">
         <Container>
             <nuxt-link to="/#home" aria-label="logo" class="flex items-center justify-center space-x-2">
-                <div aria-hidden="true" class="flex flex-col space-y-0.5">
-                    <div class="h-0 w-0 border-b-[20px] border-l-[12px] border-r-[12px] border-transparent border-b-gray-900 dark:border-b-white"></div>
-                    <div class="mx-auto h-1 w-4 rounded-full bg-primary"></div>
-                </div>
-                <span class="font-logo text-2xl font-bold text-gray-900 dark:text-white">Rise</span>
+                <Logo classes="dark:fill-white h-36 w-auto" orient="vertical" />
+
+                <!-- <span class="font-logo text-2xl font-bold text-gray-900 dark:text-white">Rise</span> -->
             </nuxt-link>
             <ul role="list" class="mt-12 flex flex-wrap items-center justify-center gap-4 py-4 text-gray-600 dark:text-gray-400 sm:gap-8">
                 <li role="listitem" v-for="link in links" :key="link.link">
@@ -67,7 +65,7 @@ export default {
             </div>
 
             <div class="mt-12 text-center">
-                <span class="text-sm tracking-wide text-gray-500">Copyright © Youtold Consultancy by Hilda Kilama 2020 - {{ new Date().getFullYear() }} | All rights reserved</span>
+                <span class="text-sm tracking-wide text-gray-500">Copyright © Youtold Consultancy 2020 - {{ new Date().getFullYear() }} | All rights reserved</span>
             </div>
         </Container>
     </footer>

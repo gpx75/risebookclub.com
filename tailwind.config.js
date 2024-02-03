@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
 
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
     content: ["./components/**/*.{js,vue,ts}", "./layouts/**/*.vue", "./pages/**/*.vue", "./plugins/**/*.{js,ts}", "./nuxt.config.{js,ts}"],
@@ -138,9 +138,9 @@ module.exports = {
             inherit: colors.inherit,
             current: colors.current,
             transparent: colors.transparent,
-            primary: "#9333EA",
-            secondary: "#ff7e33",
-            info: "#0C63E7",
+            primary: "#25AFAA",
+            secondary: "#F252E8",
+            info: "#3b82f6",
             dark: "#0A101E",
             darker: "#090E1A",
             black: colors.black,

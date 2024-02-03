@@ -6,7 +6,7 @@ export default {
 
 <template>
     <div class="flex flex-col gap-6 rounded-2xl p-8 transition duration-300 hover:bg-white hover:shadow-2xl hover:shadow-gray-600/10 dark:hover:bg-gray-700/60 dark:hover:shadow-none">
-        <div class="flex h-10 w-10 rounded border border-gray-200 dark:border-gray-700">
+        <div class="flex h-10 w-10 rounded">
             <slot />
         </div>
         <div>

@@ -1,9 +1,10 @@
 <script>
 import BaseButton from "./BaseButton.vue";
+import Logo from "./Logo.vue";
 import Container from "./layout/Container.vue";
 
 export default {
-    components: { Container, BaseButton },
+    components: { Container, BaseButton, Logo },
     data() {
         return {
             isToggled: false,
@@ -46,10 +47,11 @@ export default {
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
                         <nuxt-link href="/#home" aria-label="logo" class="flex items-center space-x-2">
                             <div aria-hidden="true" class="flex space-x-1">
+                                <Logo classes="dark:fill-white w-44 " orient="horizontal" />
                                 <!-- <div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
                                 <div class="h-6 w-2 bg-primary"></div> -->
                             </div>
-                            <span class="font-logo text-2xl font-bold text-gray-900 dark:text-white">Rise</span>
+                            <!-- <span class="font-logo text-2xl font-bold text-gray-900 dark:text-white">RISE Bookclub</span> -->
                         </nuxt-link>
 
                         <button @click="isToggled = !isToggled" class="relative flex max-h-10 items-center lg:hidden">

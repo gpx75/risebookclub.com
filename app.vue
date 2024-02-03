@@ -32,6 +32,7 @@ export default {
 </script>
 
 <template>
+    <!-- <div class="flex h-screen items-center justify-center"><h1 class="text-4xl text-black dark:text-white">risebookclub.com</h1></div> -->
     <NuxtLayout>
         <NuxtPage></NuxtPage>
     </NuxtLayout>
