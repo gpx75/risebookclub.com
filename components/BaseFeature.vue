@@ -10,8 +10,8 @@ export default {
             <slot />
         </div>
         <div>
-            <h2 class="text-xl font-semibold text-gray-900 dark:text-white">{{ title }}</h2>
-            <p class="mt-3 text-gray-600 dark:text-gray-400">{{ description }}</p>
+            <h2 class="0 text-xl font-semibold text-white dark:text-white">{{ title }}</h2>
+            <p class="text-greeen-600 mt-3 dark:text-gray-400">{{ description }}</p>
         </div>
     </div>
 </template>

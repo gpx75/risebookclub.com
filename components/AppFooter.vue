@@ -11,7 +11,7 @@ export default {
                 },
                 {
                     to: "/#about",
-                    label: "Features",
+                    label: "Reading Style",
                 },
                 {
                     to: "/#howto",
@@ -19,10 +19,10 @@ export default {
                 },
                 {
                     to: "/#reviews",
-                    label: "Reviews",
+                    label: "Testimonials",
                 },
                 {
-                    to: "/#pricing",
+                    to: "/membership",
                     label: "Pricing",
                 },
             ],
@@ -35,7 +35,7 @@ export default {
     <footer class="bg-gradient-to-b from-transparent to-gray-100 py-12 dark:to-gray-900">
         <Container>
             <nuxt-link to="/#home" aria-label="logo" class="flex items-center justify-center space-x-2">
-                <Logo classes="dark:fill-white h-36 w-auto" orient="vertical" />
+                <Logo classes="dark:fill-white fill-brand h-36 w-auto" orient="vertical" />
 
                 <!-- <span class="font-logo text-2xl font-bold text-gray-900 dark:text-white">Rise</span> -->
             </nuxt-link>

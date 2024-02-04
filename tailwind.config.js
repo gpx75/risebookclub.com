@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
-
 const defaultTheme = require("tailwindcss/defaultTheme");
-
 module.exports = {
     content: ["./components/**/*.{js,vue,ts}", "./layouts/**/*.vue", "./pages/**/*.vue", "./plugins/**/*.{js,ts}", "./nuxt.config.{js,ts}"],
     presets: [],
-    darkMode: "media", // or 'class'
+    darkMode: "media",
+
+    // or 'class'
     theme: {
         accentColor: ({ theme }) => ({
             ...theme("colors"),
@@ -167,6 +167,43 @@ module.exports = {
             fuchsia: colors.fuchsia,
             pink: colors.pink,
             rose: colors.rose,
+            brand: "#25AFAA",
+            rise2: {
+                50: "#eefffc",
+                100: "#c6fff8",
+                200: "#8efff4",
+                300: "#4dfbed",
+                400: "#19e8de",
+                500: "#01cbc5",
+                600: "#00a4a2",
+                700: "#038c8c",
+                800: "#086667",
+                900: "#0c5455",
+            },
+            rise: {
+                50: "#c6f3f1",
+                100: "#a6e5e3",
+                200: "#86d8d5",
+                300: "#65cac6",
+                400: "#45bdb8",
+                500: "#25afaa",
+                600: "#1d8a86",
+                700: "#166663",
+                800: "#0e413f",
+                900: "#061c1b",
+            },
+            "pink-flamingo": {
+                50: "#fff4ff",
+                100: "#fee8ff",
+                200: "#fecfff",
+                300: "#fdaaf9",
+                400: "#fa78f2",
+                500: "#f252e8",
+                600: "#d524c6",
+                700: "#b11aa2",
+                800: "#901882",
+                900: "#761969",
+            },
         }),
         columns: {
             auto: "auto",
@@ -320,19 +357,84 @@ module.exports = {
             // mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", '"Liberation Mono"', '"Courier New"', "monospace"],
         },
         fontSize: {
-            xs: ["0.75rem", { lineHeight: "1rem" }],
-            sm: ["0.875rem", { lineHeight: "1.25rem" }],
-            base: ["1rem", { lineHeight: "1.5rem" }],
-            lg: ["1.125rem", { lineHeight: "1.75rem" }],
-            xl: ["1.25rem", { lineHeight: "1.75rem" }],
-            "2xl": ["1.5rem", { lineHeight: "2rem" }],
-            "3xl": ["1.875rem", { lineHeight: "2.25rem" }],
-            "4xl": ["2.25rem", { lineHeight: "2.5rem" }],
-            "5xl": ["3rem", { lineHeight: "1" }],
-            "6xl": ["3.75rem", { lineHeight: "1" }],
-            "7xl": ["4.5rem", { lineHeight: "1" }],
-            "8xl": ["6rem", { lineHeight: "1" }],
-            "9xl": ["8rem", { lineHeight: "1" }],
+            xs: [
+                "0.75rem",
+                {
+                    lineHeight: "1rem",
+                },
+            ],
+            sm: [
+                "0.875rem",
+                {
+                    lineHeight: "1.25rem",
+                },
+            ],
+            base: [
+                "1rem",
+                {
+                    lineHeight: "1.5rem",
+                },
+            ],
+            lg: [
+                "1.125rem",
+                {
+                    lineHeight: "1.75rem",
+                },
+            ],
+            xl: [
+                "1.25rem",
+                {
+                    lineHeight: "1.75rem",
+                },
+            ],
+            "2xl": [
+                "1.5rem",
+                {
+                    lineHeight: "2rem",
+                },
+            ],
+            "3xl": [
+                "1.875rem",
+                {
+                    lineHeight: "2.25rem",
+                },
+            ],
+            "4xl": [
+                "2.25rem",
+                {
+                    lineHeight: "2.5rem",
+                },
+            ],
+            "5xl": [
+                "3rem",
+                {
+                    lineHeight: "1",
+                },
+            ],
+            "6xl": [
+                "3.75rem",
+                {
+                    lineHeight: "1",
+                },
+            ],
+            "7xl": [
+                "4.5rem",
+                {
+                    lineHeight: "1",
+                },
+            ],
+            "8xl": [
+                "6rem",
+                {
+                    lineHeight: "1",
+                },
+            ],
+            "9xl": [
+                "8rem",
+                {
+                    lineHeight: "1",
+                },
+            ],
         },
         fontWeight: {
             thin: "100",
@@ -941,5 +1043,54 @@ module.exports = {
             50: "50",
         },
     },
-    plugins: [],
+    plugins: [require("daisyui")],
+    daisyui: {
+        themes: [
+            {
+                light: {
+                    primary: "#25AFAA",
+                    secondary: "#F252E8",
+                    accent: "#FFCD27",
+                    neutral: "#8E1769",
+                    "neutral-content": "#fafafa",
+                    "base-content": "#3f3f46",
+                    "base-100": "#FBFEFE",
+                    "base-200": "#E2F9F8",
+                    "base-300": "#B3EFED",
+                    info: "#3b82f6",
+                    success: "#22c55e",
+                    warning: "#f59e0b",
+                    error: "#dc2626",
+                    "--rounded-btn": "1.9rem",
+                    "--tab-border": "2px",
+                    "--tab-radius": ".1rem",
+                    "--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
+                    "--rounded-badge": "1.9rem", // border radius rounded-badge utility class, used in badges and similar
+                    "--animation-btn": "0.25s", // duration of animation when you click on button
+                    "--animation-input": "0.2s", // duration of animation for inputs like checkbox, toggle, radio, etc
+                    "--btn-text-case": "uppercase", // set default text transform for buttons
+                    "--btn-focus-scale": "0.95", // scale transform of button when you focus on it
+                    "--border-btn": "1px", // border width of buttons
+                    "--tab-border": "1px", // border width of tabs
+                    "--tab-radius": "0.5rem", // border radius of tabs
+                },
+                dark: {
+                    "color-scheme": "dark",
+                    primary: "#038c8c",
+                    secondary: "#F252E8",
+                    accent: "#FFCD27",
+                    neutral: "#191D24",
+                    "neutral-focus": "#111318",
+                    "neutral-content": "#A6ADBB",
+                    "base-100": "#2A303C",
+                    "base-200": "#242933",
+                    "base-300": "#20252E",
+                    "base-content": "#A6ADBB",
+                    "--rounded-btn": "1.9rem",
+                    "--tab-border": "2px",
+                    "--tab-radius": ".5rem",
+                },
+            },
+        ],
+    },
 };

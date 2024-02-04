@@ -16,10 +16,10 @@ export default {
             <div class="relative pt-40 xl:pt-36">
                 <div class="gap-12 md:flex md:items-center">
                     <div class="w-full text-center sm:px-12">
-                        <h1 class="bg-gradient-to-r from-teal-50 to-teal-500 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-center sm:text-6xl">Your Medium for Transformation</h1>
+                        <h1 class="bg-gradient-to-r from-rise-100 to-rise-600 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-center sm:text-6xl">Your Medium for Transformation</h1>
                         <div class="">
-                            <h2 class="bg-gradient-to-r from-pink-200 to-pink-600 bg-clip-text font-cursive text-3xl tracking-tight text-transparent sm:text-center sm:text-6xl">Elevate Your Consciousness Through Personal & Spiritual Development Readings.</h2>
-                            <p class="mt-8 text-xl text-gray-700 dark:text-gray-100">We meet online every last Friday of the month. All book enthusiasts welcome.</p>
+                            <h2 class="bg-gradient-to-r from-pink-flamingo-200 to-pink-flamingo-600 bg-clip-text font-cursive text-3xl tracking-tight text-transparent sm:text-center sm:text-6xl">Elevate Your Consciousness Whilst Reading Personal & Spiritual Development Books.</h2>
+                            <p class="mt-8 text-xl text-zinc-700 dark:text-zinc-100">We meet online every last Friday of the month. All readers welcome!</p>
 
                             <div class="mt-8 flex w-full overflow-visible text-center md:mt-32 lg:mt-20 xl:mt-16">
                                 <ul role="list" class="mx-auto grid max-w-2xl grid-cols-1 justify-center gap-6 sm:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5">
@@ -27,10 +27,10 @@ export default {
                                         <nuxt-img quality="80" preload loading="lazy" src="/images/AdobeStock_488823903.jpeg" width="8256" height="5604" sizes="sm:100vw md:50vw lg:400px" class="inset-0 h-52 w-52 -rotate-3 rounded-3xl object-cover" />
                                     </li>
                                     <li>
-                                        <nuxt-img quality="80" preload loading="lazy" src="/images/AdobeStock_549218489.jpeg" width="8256" height="5604" sizes="sm:100vw md:50vw lg:400px" class="inset-0 h-52 w-52 -rotate-2 rounded-3xl object-cover" />
+                                        <nuxt-img quality="80" preload loading="lazy" src="/images/AdobeStock_466667427.jpg" width="8256" height="5604" sizes="sm:100vw md:50vw lg:400px" class="inset-0 h-52 w-52 -rotate-2 rounded-3xl object-cover" />
                                     </li>
                                     <li>
-                                        <nuxt-img quality="80" preload loading="lazy" src="/images/AdobeStock_466667427.jpg" width="8256" height="5604" sizes="sm:100vw md:50vw lg:400px" class="inset-0 h-52 w-52 rotate-2 rounded-3xl object-cover" />
+                                        <nuxt-img quality="80" preload loading="lazy" src="/images/AdobeStock_549218489.jpeg" width="8256" height="5604" sizes="sm:100vw md:50vw lg:400px" class="inset-0 h-52 w-52 rotate-2 rounded-3xl object-cover" />
                                     </li>
                                     <li>
                                         <nuxt-img quality="80" preload loading="lazy" src="/images/AdobeStock_340974509.jpg" width="8256" height="5604" sizes="sm:100vw md:50vw lg:400px" class="inset-0 h-52 w-52 -rotate-2 rounded-3xl object-cover" />
@@ -42,8 +42,8 @@ export default {
                             </div>
 
                             <div class="mt-20 flex justify-center gap-4 sm:gap-6">
-                                <BaseButton emphasis="primary" label="Join our book club!" to="/register" />
-                                <BaseButton emphasis="secondary" label="Learn more" to="#howto" />
+                                <BaseButton emphasis="primary" label="Join our book club!" to="/membership" />
+                                <BaseButton emphasis="secondary" label="Learn more" to="#solution" />
                             </div>
                         </div>
                     </div>

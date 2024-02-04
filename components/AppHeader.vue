@@ -11,24 +11,24 @@ export default {
             links: [
                 {
                     to: "/#about",
-                    label: "About",
+                    label: "Reading Style",
                 },
                 {
                     to: "/#solution",
-                    label: "How it works",
+                    label: "How it Works",
                 },
                 {
                     to: "/#reviews",
-                    label: "Reviews",
+                    label: "Testimonials",
                 },
                 {
                     to: "/#pricing",
                     label: "Membership",
                 },
-                {
-                    to: "/login",
-                    label: "Login",
-                },
+                // {
+                //     to: "/login",
+                //     label: "Login",
+                // },
                 {
                     to: "/#faq",
                     label: "FAQ",
@@ -47,7 +47,7 @@ export default {
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
                         <nuxt-link href="/#home" aria-label="logo" class="flex items-center space-x-2">
                             <div aria-hidden="true" class="flex space-x-1">
-                                <Logo classes="dark:fill-white w-44 " orient="horizontal" />
+                                <Logo classes="dark:fill-white fill-brand w-44 " orient="horizontal" />
                                 <!-- <div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
                                 <div class="h-6 w-2 bg-primary"></div> -->
                             </div>
@@ -79,7 +79,7 @@ export default {
                         </div>
 
                         <div class="mt-12 lg:mt-0">
-                            <base-button size="sm" to="/register" label="Join" emphasis="primary" />
+                            <base-button size="sm" to="/membership" label="Join" emphasis="primary" />
                         </div>
                     </div>
                 </div>

@@ -43,7 +43,7 @@ export default defineNuxtConfig({
         link: [{ rel: "icon", type: "image/svg+xml", href: "./favicon.svg" }],
     },
     css: ["@/assets/css/main.css"],
-    modules: ["@nuxtjs/tailwindcss", "@nuxt/image", "@nuxtjs/google-fonts"],
+    modules: ["@nuxtjs/google-fonts", "@nuxtjs/tailwindcss", "@nuxt/image", ],
     publicRuntimeConfig: {
         firebaseStorageUrl: `https://firebasestorage.googleapis.com/v0/b/${process.env.NUXT_ENV_FIREBASE_STORAGE_BUCKET}/o`,
     },

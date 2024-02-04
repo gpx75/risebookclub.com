@@ -15,43 +15,43 @@ export default {
 <template>
     <div class="pt-32 md:pt-44" id="solution">
         <container>
-            <div class="flex-row-reverse items-center justify-between space-y-12 text-gray-600 md:flex md:gap-6 lg:gap-12 lg:space-y-0">
+            <div class="text-gray-60Voices of Inspiration: Member Testimonials0 flex-row-reverse items-center justify-between space-y-12 md:flex md:gap-6 lg:gap-12 lg:space-y-0">
                 <div class="relative ml-auto h-full md:w-1/2">
-                    <nuxt-img class="dark:hidden" src="/images/milestone.webp" alt="app milestone" width="1174" height="1134" />
-                    <nuxt-img class="hidden dark:block" src="/images/milestone-dark.webp" alt="app milestone" width="1174" height="1134" />
+                    <nuxt-img class="dark:hidden" src="/images/milestone-light.png" alt="app milestone" width="1174" height="1134" />
+                    <nuxt-img class="hidden dark:block" src="/images/milestone-dark.png" alt="app milestone" width="1174" height="1134" />
                 </div>
 
                 <div class="md:w-1/2 lg:w-[47%]">
-                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">How it works</h2>
-                    <h3 class="md:text-1xl lg:text-2 gxl text-xl font-bold text-gray-900 dark:text-white">We pick a theme. You pick your book.</h3>
+                    <h2 class="text-3xl font-bold text-rise-700 dark:text-white md:text-4xl lg:text-5xl">How it Works</h2>
+                    <h3 class="md:text-1xl bg-clip-text font-cursive text-xl text-pink-flamingo-600 lg:text-2xl">We pick a theme. You pick a book.</h3>
                     <ul role="list" class="space-y-4 py-6 text-gray-600 dark:text-gray-300">
                         <li class="space-x-2">
                             <span class="font-semibold text-primary dark:text-gray-300">&check;</span>
-                            <span> There are monthly themes. Youre free to discover and choose you're own book, to then share with the group</span>
+                            <span> There are monthly curated themes and you are free to discover and choose you're own book, to then share with the group</span>
                         </li>
                         <li class="space-x-2">
                             <span class="font-semibold text-primary dark:text-gray-300">&check;</span>
-                            <span>Don't worry, there is also a book list, just incase it's hard to choose your next best read</span>
+                            <span>Don't worry, there is also a book list if you need support to get started</span>
                         </li>
                         <li class="space-x-2">
                             <span class="font-semibold text-primary dark:text-gray-300">&check;</span>
-                            <span>We are interactive and encourage deep meaningful discussions, where everyone learns</span>
+                            <span>We are interactive and encourage deep meaningful discussions and everyone learns</span>
                         </li>
                         <li class="space-x-2">
                             <span class="font-semibold text-primary dark:text-gray-300">&check;</span>
-                            <span>After each meeting all members recive a summary of the books discssused</span>
+                            <span>After each meeting all members receive a discussion summary</span>
                         </li>
                         <li class="space-x-2">
                             <span class="font-semibold text-primary dark:text-gray-300">&check;</span>
-                            <span>To get the most out of the books we read, we take action and commit to making changes that will support our personal growth and transformation</span>
+                            <span>To get the most out of the books we read, we take action and commit to making changes that will support our growth and transformation</span>
                         </li>
                         <li class="space-x-2">
                             <span class="font-semibold text-primary dark:text-gray-300">&check;</span>
-                            <span>Plus, we have monthly book exchanges where you get to expand your library by borrowing from others</span>
+                            <span>Book breaks are allowed and you can choose your own medium for the theme, such as articles, blogs. papers etc.</span>
                         </li>
                         <li class="space-x-2">
                             <span class="font-semibold text-primary dark:text-gray-300">&check;</span>
-                            <span>Members also have access to in-person and digital events with guest speakers, authers and book club social meetups</span>
+                            <span>Members also have access to in-person social meetups and digital events with guest speakers.</span>
                         </li>
                     </ul>
                     <!-- <div class="space-y-4 divide-y divide-gray-100 dark:divide-gray-800">
@@ -82,7 +82,7 @@ export default {
                 </div>
             </div>
             <products />
-            <solution-content />
+            <!-- <solution-content /> -->
         </container>
     </div>
 </template>
